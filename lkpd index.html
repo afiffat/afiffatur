@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Pendaftaran Murid Baru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>FORMULIR PENDAFTARAN MURID BARU</h2>
+
+    <main>
+        <section>
+            <article>
+                <form>
+                    <label>Nama Lengkap:</label>
+                    <input type="text" placeholder="Masukkan nama">
+
+                    <label>Tempat, Tanggal Lahir:</label>
+                    <input type="text" placeholder="Masukkan tanggal lahir">
+
+                    <label>Jenis Kelamin:</label>
+                    <select>
+                        <option>Laki-laki</option>
+                        <option>Perempuan</option>
+                    </select>
+
+                    <label>Alamat:</label>
+                    <textarea placeholder="Masukkan alamat"></textarea>
+
+                    <label>Asal Sekolah:</label>
+                    <input type="text" placeholder="Masukkan asal sekolah">
+
+                    <label>Nomor HP:</label>
+                    <input type="text" placeholder="Masukkan nomor HP">
+
+                    <button type="button" onclick="simpanPesan()">
+                        Daftar
+                    </button>
+                </form>
+
+                <div id="kotak-pesan">
+                    <p id="pesanStatus">Sedang Memuat...</p>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <script>
+        function simpanPesan() {
+            document.getElementById("pesanStatus").innerHTML =
+            "Data Berhasil Disimpan";
+        }
+    </script>
+
+</body>
+</html>
